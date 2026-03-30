@@ -292,7 +292,7 @@ def train():
     best_val_acc = 0.0
     best_epoch = 0
 
-    print(f"Starting training on {DEVICE}\n{'='*60}")
+    print(f"Starting training on {DEVICE}\n")
 
     for epoch in range(1, NUM_EPOCHS + 1):
         start = time.time()
