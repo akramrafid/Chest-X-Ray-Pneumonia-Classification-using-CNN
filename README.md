@@ -82,7 +82,7 @@ Output: NORMAL or PNEUMONIA
 
 ### Why each component is used
 
-**Conv2d layers** are the core of the CNN. They apply learnable filters across the input image to detect local patterns such as edges, textures, and shapes. The filter count doubles at each block (32→64→128→256) so the network learns increasingly abstract features — early blocks detect simple edges and intensity gradients, later blocks detect complex opacity patterns characteristic of pneumonia.
+**Conv2d layers** are the core of the CNN. They apply learnable filters across the input image to detect local patterns such as edges, textures, and shapes. The filter count doubles at each block (32→64→128→256) so the network learns increasingly abstract features early blocks detect simple edges and intensity gradients, later blocks detect complex opacity patterns characteristic of pneumonia.
 
 **Two Conv layers per block** allows deeper feature extraction before spatial resolution is reduced by pooling. This is inspired by the VGG design principle and gives the network more capacity to learn complex patterns at each spatial scale.
 
