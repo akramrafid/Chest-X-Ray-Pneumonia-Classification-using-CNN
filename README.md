@@ -241,6 +241,12 @@ Generates a 3-panel figure — original image, heatmap, and overlay — saved to
 | True NORMAL | 183 | 51 |
 | True PNEUMONIA | 9 | 381 |
 
+<img width="2084" height="732" alt="training_history" src="https://github.com/user-attachments/assets/db5cedca-ce3b-4fdb-849b-d3503627cb2c" />
+<img width="984" height="882" alt="confusion_matrix" src="https://github.com/user-attachments/assets/31df333f-200f-44af-9e6a-10b161e67ebe" />
+<img width="2198" height="745" alt="gradcam_person100_bacteria_475" src="https://github.com/user-attachments/assets/7fc6d33f-8675-4551-a326-1dc776095543" />
+
+
+
 ### Key Observations
 
 **Pneumonia recall of 97.7%** means the CNN missed only 9 pneumonia cases out of 390. This is the most clinically important metric — a false negative (missed pneumonia) is more dangerous than a false positive (unnecessary follow-up). The weighted loss function directly drives this behaviour.
