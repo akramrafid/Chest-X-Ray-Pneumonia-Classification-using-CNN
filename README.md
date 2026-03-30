@@ -86,7 +86,7 @@ Output: NORMAL or PNEUMONIA
 
 **Two Conv layers per block** allows deeper feature extraction before spatial resolution is reduced by pooling. This is inspired by the VGG design principle and gives the network more capacity to learn complex patterns at each spatial scale.
 
-**BatchNorm2d after every Conv** normalises the activations within each mini-batch. This stabilises training, allows higher learning rates, and acts as a mild regulariser — especially important when training from scratch on a relatively small medical dataset.
+**BatchNorm2d after every Conv** normalises the activations within each mini-batch. This stabilises training, allows higher learning rates, and acts as a mild regulariser, especially important when training from scratch on a relatively small medical dataset.
 
 **MaxPool2d** halves the spatial dimensions at each block, reducing computation and making the learned features more translation-invariant.
 
